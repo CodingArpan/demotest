@@ -1,0 +1,209 @@
+.eventNavBar {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--primaryGray);
+}
+
+.event {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    /* background: #eaeaea; */
+}
+
+.radiobtn {
+    display: none;
+}
+
+.eventNavBar input[type="radio"]:checked+label {
+    border-bottom: 3px solid var(--primaryBlueLight);
+    color: var(--primaryBlue);
+}
+
+.eventInfo {
+    background-color: white;
+    margin: 2rem auto;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 800px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 20px 0px rgba(115, 178, 255, 0.3);
+
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.infoCard>p {
+    padding: 10px;
+}
+
+p.infTitle {
+    font-size: 0.9rem;
+    color: var(--primaryGrayDark);
+}
+
+p.details {
+    font-size: 1rem;
+    color: var(--primaryGrayLight);
+}
+
+
+
+.galleryContainer {
+    position: relative;
+    overflow-x: scroll;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: block;
+}
+
+.galleryContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.galleryContainer {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scrollBtn {
+    position: sticky;
+    z-index: 1;
+    /* background: #e0e0e0; */
+    /* height: 300px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    top: 180px;
+    padding: 10px
+}
+
+.left,
+.right {
+    /* position: absolute; */
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 20px 0 white;
+}
+
+.left:hover,
+.right:hover {
+    transition: all 0.2 ease-out;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+
+.leftArrow,
+.rightArrow {
+    width: 1rem;
+}
+
+.gallery {
+    margin: auto;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: visible;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: center;
+
+}
+
+.imgStyle {
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    background-position: center;
+    border-radius: 20px;
+    filter: brightness(0.6);
+}
+
+.cardTitle {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.description {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.btn {
+    background-color: white;
+    border-radius: 20px;
+    padding:10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    scale: 1.1;
+}
+
+.cardTitle,
+.description,
+.btn {
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width:800px) {
+    .event {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+
+    .eventInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

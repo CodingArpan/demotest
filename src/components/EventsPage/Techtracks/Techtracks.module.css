@@ -1,0 +1,99 @@
+.tagline {
+    font-size: 1.2rem;
+    color: var(--primaryGray);
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.trackContainer {
+    padding: 4rem 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.track {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: var(--primaryWhite);
+    box-shadow: 0px 4px 20px rgba(187, 212, 249, 0.413);
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.track:hover {
+    scale: 1.05;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+
+}
+
+.track span {
+    position: relative;
+    width: 50%;
+    height: 4px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.blueUnderline {
+    background-color: var(--primaryBlueLight);
+}
+
+.redUnderline {
+    background-color: var(--primaryRedLight);
+}
+.yellowUnderline{
+    background-color: var(--primaryYellowLight);
+}
+.greenUnderline{
+    background-color: var(--primaryGreenLight);
+}
+.grayUnderline{
+    background-color: var(--primaryGrayLight);
+}
+
+.trackName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--primaryGray);
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .trackContainer {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(4, 200px);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .trackContainer {
+        grid-template-columns: repeat(1, 200px);
+        grid-template-rows: repeat(8, 200px);
+    }
+
+}

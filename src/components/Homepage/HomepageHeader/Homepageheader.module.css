@@ -1,0 +1,163 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1c1c1c;
+    /* background: linear-gradient(120deg, rgb(44, 44, 44) 0%, rgb(42, 41, 67) 33%, rgba(1, 0, 0, 1) 100%); */
+    overflow: hidden;
+}
+
+.eventbanner {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primaryWhite);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+
+
+}
+
+.tagline {
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 4rem 0;
+    color: var(--primaryGray);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem 0 6rem 0;
+    gap: 30px;
+}
+
+
+.btnRegister,
+.btnSpeakers {
+    padding: 0.8rem 3rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+}
+
+.colorBorder {
+    border: none;
+    outline: none;
+    padding: 2px;
+    border-radius: 50px;
+    background: linear-gradient(120deg,
+            rgba(211, 0, 0, 1) 0%,
+            rgba(53, 110, 204, 1) 50%,
+            rgba(245, 184, 4, 1) 100%);
+
+    box-shadow: 0 4px 20px 0 rgba(255, 175, 175, 0.297);
+    transition: all 0.3s ease-in-out;
+}
+
+.colorBorder:hover {
+    scale: 1.05;
+}
+
+
+.btnRegister {
+    background-color: #252525;
+    color: var(--primaryWhite);
+
+}
+
+.btnSpeakers {
+    background-color: var(--primaryWhite);
+    color: var(--primaryBlack);
+    border: 2px solid black;
+    font-weight: 600;
+}
+
+.btnSpeakers:hover {
+    background-color: var(--primaryBlack);
+    color: var(--primaryWhite);
+    border: 2px solid var(--primaryWhite);
+
+}
+
+.mdcContainer,
+.mdc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    /* padding: 2rem; */
+
+}
+
+.imgStyle {
+    width: 500px;
+    position: absolute;
+    bottom: -200px;
+}
+
+.container {
+    padding-bottom: 8rem;
+}
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .imgStyle {
+        width: 400px;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+        font-weight: 400;
+        max-width: 300px;
+    }
+
+    .btnContainer {
+        padding: 2rem;
+    }
+
+    .btnRegister,
+    .btnSpeakers {
+        padding: 0.5rem 2rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .btnContainer {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}

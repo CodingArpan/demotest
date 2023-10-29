@@ -1,0 +1,119 @@
+.tagline {
+    font-size: 1.2rem;
+    width: 100%;
+    color: var(--primaryGrayLight);
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+
+.speakerContainer {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 230px);
+    grid-template-rows: repeat(auto-fit, 300px);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 4rem 0;
+    margin: auto;
+}
+
+.speakerCard {
+    width: 230px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(126, 186, 255, 0.304);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.speaker,
+.speakerDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tubeline {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--primaryBlue);
+    margin: auto;
+}
+
+.imgStyle {
+    width: 80px;
+    height: 80px;
+    border-radius: 1000%;
+    object-fit: cover;
+    border: 1px solid var(--primaryBlue);
+}
+
+.speakerName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primaryGray);
+    text-transform: capitalize;
+}
+
+.speakerDesignation {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--primaryGrayLight);
+    text-transform: capitalize;
+}
+
+.speakerCompany {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primaryBlue);
+    text-transform: capitalize;
+}
+
+.speakerImage {
+    margin-bottom: 20px;
+
+}
+
+.speakerName,
+.speakerDesignation,
+.speakerCompany {
+    margin-bottom: 8px;
+}
+
+.socialConatiner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.linkedin {
+    margin-right: 10px;
+}
+
+.twitter,
+.linkedin {
+    width: 20px;
+    
+}

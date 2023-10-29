@@ -1,0 +1,134 @@
+.actionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+    gap: 30px;
+
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    /* padding: 2rem; */
+    /* box-shadow: 0px 4px 20px 0px rgb(232, 243, 255) */
+}
+
+.barrier {
+    /* display: none; */
+    height: 200px;
+    width: 2px;
+    background: radial-gradient(rgb(143, 171, 251) 20%, white 70%);
+}
+
+.actionname,
+.description {
+    margin: 1rem 0;
+}
+
+.actionname {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primaryGrayDark);
+    letter-spacing: 1px;
+}
+
+.codeUnderline,
+.meetUnderline,
+.eventUnderline {
+    position: relative;
+    text-align: center;
+    width: 60px;
+    height: 4px;
+    border-radius: 50px;
+}
+
+.codeUnderline {
+    background-color: var(--primaryRed);
+}
+
+.meetUnderline {
+    background-color: var(--primaryBlue);
+}
+
+.eventUnderline {
+    background-color: var(--primaryYellow);
+}
+
+.description {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--primaryGrayLight);
+}
+
+.codeCircle,
+.meetCircle,
+.eventCircle {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.codeCircle {
+    background-color: var(--primaryRedExtraLight);
+    border: 2px solid var(--primaryRed);
+
+}
+
+.meetCircle {
+    background-color: var(--primaryBlueExtraLight);
+    border: 2px solid var(--primaryBlue);
+
+}
+
+.eventCircle {
+    background-color: var(--primaryYellowExtraLight);
+    border: 2px solid var(--primaryYellow);
+
+}
+
+.codeIcon,
+.meetIcon,
+.eventIcon {
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .actionContainer {
+        flex-direction: column;
+        padding: 2rem 0;
+
+    }
+
+    .actions {
+        padding: 2rem ;
+        border-radius: 20px;
+        box-shadow: 0px 4px 20px 0px rgb(232, 243, 255)
+    }
+
+    .barrier {
+        display: none;
+    }
+
+
+    .actionname {
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+}

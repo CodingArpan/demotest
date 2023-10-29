@@ -1,0 +1,55 @@
+
+.socialContainer {
+    padding: 6rem 0;
+}
+
+.socialContainer,
+.twoConatiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.socialCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 230px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 9px 48px 0 rgba(172, 204, 255, 0.2);
+}
+
+.socialIcons {
+    width: 40px;
+}
+
+.icon,
+.cardTitle {
+    margin-bottom: 20px;
+
+}
+
+.cardTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primaryGrayDark);
+
+
+}
+
+.message {
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primaryGrayLight);
+
+}

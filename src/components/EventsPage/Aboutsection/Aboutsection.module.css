@@ -1,0 +1,12 @@
+.paragraph {
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--primaryGray);
+    text-align: center;
+}

@@ -1,95 +1,33 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Sponsors from '@/components/Homepage/Sponsors/Sponsors'
+import Sponsors_scroll from '@/components/Homepage/Sponsors_scroll/Sponsors_scroll'
+import Organizers from '@/components/Homepage/Organizers/Organizers'
+import Whatwedo from '@/components/Homepage/Whatwedo/Whatwedo'
+import PreviousEvents from '@/components/Homepage/PreviousEvents/PreviousEvents'
+import Testimonials from '@/components/Homepage/Testimonials/Testimonials'
+import ConnectWithus from '@/components/Homepage/ConnectWitus/ConnectWithus'
+import BecomeSponsor from '@/components/Homepage/BecomeSponsor/BecomeSponsor'
+import HireDevlopers from '@/components/Homepage/HireDevlopers/HireDevlopers'
+import Footer from '@/components/Common/Footer/Footer'
+import Homepageheader from '@/components/Homepage/HomepageHeader/Homepageheader'
+import Navbar from '@/components/Common/Navbar/Navbar'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <div className={styles.container}>
+      <Navbar />
+      <Homepageheader />
+      {/* <Sponsors /> */}
+      <Sponsors_scroll />
+      <Organizers />
+      <Whatwedo />
+      <PreviousEvents />
+      <Testimonials />
+      <ConnectWithus />
+      <BecomeSponsor />
+      <HireDevlopers />
+      <Footer />
+    </div>
   )
 }

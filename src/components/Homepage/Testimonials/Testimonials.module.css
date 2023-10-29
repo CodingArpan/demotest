@@ -1,0 +1,125 @@
+.tagLine {
+    width: 100%;
+    color: var(--primaryGrayLight);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+
+}
+
+.circleConatiner {
+    margin: auto;
+    position: relative;
+    width: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bigCircle {
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 100%;
+    background-color: #DCE9FF;
+    opacity: 0.2;
+    margin: auto;
+    z-index: -15;
+    top: -50vw;
+}
+
+.feedbackContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 6rem 0;
+}
+
+.feedbackCard {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 50px 0 rgba(104, 158, 247, 0.2);
+}
+
+.profilePic,
+.imageStyle {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.profilePic {
+    margin: 20px 0;
+}
+
+.name,
+.designation,
+.feedback {
+    margin-bottom: 10px;
+}
+
+.name {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primaryBlue);
+    letter-spacing: 1px;
+}
+
+.designation {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--primaryBlueLight);
+}
+
+.feedback {
+    text-transform: none;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--primaryGrayLight);
+    line-height: 16px;
+}
+
+
+
+.feedbackContainer>div:nth-child(2) {
+    position: relative;
+    top: 150px;
+}
+
+.feedbackContainer>div:nth-child(4) {
+    position: relative;
+    top: 60px;
+}
+
+@media screen and (max-width:1200px) {
+
+
+    .feedbackContainer>div:nth-child(2),
+    .feedbackContainer>div:nth-child(4) {
+        top: 0px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .feedbackCard {
+        width: 80%;
+        max-width: 400px;
+    }
+}

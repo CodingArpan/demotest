@@ -1,0 +1,80 @@
+.hireDevlopers {
+    position: relative;
+    padding: 4rem 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.circle {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -10;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: var(--primaryRedExtraLight);
+}
+
+.colorText {
+    color: var(--primaryGrayLight);
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+
+.hire {
+    color: var(--primaryRed);
+
+}
+
+.community {
+    color: var(--primaryYellow);
+
+}
+
+.contactBtn {
+    padding: 10px 30px;
+    background-color: var(--primaryBlue);
+    color: white;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+.right {
+    position: relative;
+}
+
+.imageStyle {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media screen and (max-width:800px) {
+    .colorText {
+        font-size: 2rem;
+    }
+
+    .circle {
+        position: absolute;
+        top: -50px;
+        left: 0px;
+    }
+}
