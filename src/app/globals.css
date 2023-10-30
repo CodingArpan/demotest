@@ -14,9 +14,9 @@
   --primaryRed: #FF696E;
   --primaryRedLight: #fba3a3;
   --primaryRedExtraLight: #FFEEEE;
-  --primaryGreen:rgb(135, 224, 133);
-  --primaryGreenLight:rgb(196, 230, 196);
-  --primaryGreenExtraLight:rgb(82, 225, 79);
+  --primaryGreen: rgb(135, 224, 133);
+  --primaryGreenLight: rgb(196, 230, 196);
+  --primaryGreenExtraLight: rgb(82, 225, 79);
 
   /* text colors  */
   --sectionTitleColor: #616161;
@@ -47,7 +47,12 @@ html,
 body {
   max-width: 100vw;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {

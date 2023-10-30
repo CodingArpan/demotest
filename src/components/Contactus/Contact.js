@@ -71,13 +71,25 @@ function Contact() {
             console.log('error, request can not be send');
         }
     }
-
+    const copyEmail = (e) => {
+        const emailText = "mehdevs@gmail.com";
+        navigator.clipboard.writeText(emailText);
+        console.log('email copied');
+        e.target.innerText = "Copied !";
+        e.target.style.backgroundColor = "#4CAF50";
+        e.target.style.color = "#fff";
+        setTimeout(() => {
+            e.target.innerText = "Copy";
+            e.target.style.backgroundColor = "transparent";
+            e.target.style.color = "#fff";
+        }, 1000);
+    }
 
 
 
     return (
         <div className={styles.contactus}>
-            <div className={styles.contactcard}>
+            <div className={styles.contactcard} >
                 <div className={styles.secTitle}>
                     <span className={styles.icon}>
                         <svg className={styles.emailIcon} viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
@@ -90,6 +102,8 @@ function Contact() {
                 </div>
 
                 <div className={styles.emailAddress}>mehdevs@gmail.com</div>
+
+                <div onClick={(e) => { copyEmail(e) }} className={styles.copyBtn}>Copy</div>
             </div>
             <div className={styles.conatctForm}>
                 <div className={styles.pageTitle}>

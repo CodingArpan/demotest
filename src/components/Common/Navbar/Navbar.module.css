@@ -58,6 +58,8 @@
     color: var(--primaryBlack);
     cursor: pointer;
     transition: all 0.2s ease-in;
+    text-decoration: none;
+
 }
 
 .menuitem:hover {
@@ -66,6 +68,10 @@
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-color: var(--primaryRed);
+}
+
+.cover {
+    display: block;
 }
 
 .deskBtn,
@@ -103,7 +109,8 @@
 
 @media screen and (max-width:800px) {
 
-    div.deskBtn {
+    div.deskBtn,
+    .cover {
         display: none;
     }
 
@@ -120,7 +127,7 @@
 
     .menulist {
         position: absolute;
-        top: -293px;
+        top: -350px;
         left: 0;
         width: 100%;
         opacity: 0;
@@ -146,14 +153,27 @@
         cursor: pointer;
     }
 
-    .threebar {
+    .threebar,
+    .crossIcon {
         width: 20px;
     }
 
-    .checkBox:checked+.menulist {
+    .crossIcon {
+        display: none;
+    }
+
+    .checkBox:checked~.menulist {
         top: 65px;
         opacity: 1;
 
+    }
+
+    .checkBox:checked~label.mobMenu>.threebar {
+        display: none;
+    }
+
+    .checkBox:checked~label.mobMenu>.crossIcon {
+        display: block;
     }
 
 }

@@ -1,6 +1,12 @@
+'use client'
 import React from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
 import styles from '@/components/EventsPage/EventPageHeader/EventPageHeader.module.css'
 function EventPageHeader() {
+    const path = usePathname();
+    console.log(path);
     return (
         <header>
             <div className={styles.container}>
@@ -14,7 +20,7 @@ function EventPageHeader() {
                     <button className={styles.colorBorder}>
                         <div className={styles.btnRegister}>  Register Now</div>
                     </button>
-                    <button className={styles.btnSpeakers}>our speakers</button>
+                    <Link href={`${path}/#speakers`}> <button className={styles.btnSpeakers}>our speakers</button></Link>
                 </div>
 
             </div>

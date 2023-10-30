@@ -31,7 +31,7 @@ function Organizers({ title }) {
 
 
     return (
-        <div className="section organizers">
+        <div id='team' className="section organizers">
             <p className={`title`}>{title ? title : "Meet Our Organizers"}</p>
             <div className={styles.cardContainer}>
 

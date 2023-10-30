@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import styles from '@/components/Homepage/HireDevlopers/HireDevloper.module.css'
 function HireDevlopers() {
     return (
@@ -10,7 +11,7 @@ function HireDevlopers() {
                     from
                     <p className={styles.community}>our community</p>
                 </div>
-                <div className={styles.contactBtn}>Contact us</div>
+                <Link href="/contact"> <div className={styles.contactBtn}>Contact us</div></Link>
             </div>
 
             <div className={styles.right}>

@@ -30,6 +30,14 @@
     width: 150px;
 }
 
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
 .right {
     width: max-content;
     display: flex;
@@ -125,6 +133,15 @@
 
 }
 
+.tagline {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--primaryGrayLight);
+    padding: 2rem 0;
+    width: 100%;
+    max-width: 400px;
+}
+
 @media screen and (max-width:800px) {
 
     .footer,
@@ -139,6 +156,12 @@
         margin-bottom: 20px;
     }
 
+    .left {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     .logo {
         padding: 2rem 0;
     }
@@ -150,11 +173,13 @@
     .footer,
     .linkContainer,
     .right,
+    .left,
     .optionContainer,
     .legalConatiner {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        text-align: left;
     }
 
     .linkContainer,
