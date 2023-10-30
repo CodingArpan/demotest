@@ -1,4 +1,5 @@
 import Footer from '@/components/Common/Footer/Footer'
+import Navbar from '@/components/Common/Navbar/Navbar'
 import Aboutsection from '@/components/EventsPage/Aboutsection/Aboutsection'
 import EventPageHeader from '@/components/EventsPage/EventPageHeader/EventPageHeader'
 import Quotes from '@/components/EventsPage/Quotes/Quotes'
@@ -14,6 +15,7 @@ function page({ params }) {
     // console.log(params);
     return (
         <>
+            <Navbar />
             <EventPageHeader />
             <Aboutsection />
             <Techtracks />
