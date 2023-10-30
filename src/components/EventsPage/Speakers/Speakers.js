@@ -136,7 +136,7 @@ function Speakers() {
     return (
         <div id="speakers" className="section aboutsection">
             <p className={`title`}>our speakers</p>
-            <p className={styles.tagline}>See Who's Coming</p>
+            <p className={styles.tagline}>See Who is Coming</p>
             <div className={styles.speakerContainer}>
 
                 {
