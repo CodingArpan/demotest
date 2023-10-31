@@ -13,7 +13,7 @@ function EventPageHeader() {
             <div className={styles.container}>
                 <div className={styles.eventbanner}>
                     <div className={styles.imageStyle}>
-                        <Image fill src="/Devloop2.0.png" alt="" />
+                        <Image fill src="/Devloop20.png" alt="" />
                     </div>
                 </div>
                 <div className={styles.tagline}>Lorem ipsum dolor sit amet consectetur
