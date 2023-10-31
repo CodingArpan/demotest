@@ -7,7 +7,6 @@ import Speakers from '@/components/EventsPage/Speakers/Speakers'
 import Techtracks from '@/components/EventsPage/Techtracks/Techtracks'
 import BecomeSponsor from '@/components/Homepage/BecomeSponsor/BecomeSponsor'
 import Organizers from '@/components/Homepage/Organizers/Organizers'
-import Sponsors from '@/components/Homepage/Sponsors/Sponsors'
 import Sponsors_scroll from '@/components/Homepage/Sponsors_scroll/Sponsors_scroll'
 import React from 'react'
 

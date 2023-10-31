@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Sponsors from '@/components/Homepage/Sponsors/Sponsors'
 import Sponsors_scroll from '@/components/Homepage/Sponsors_scroll/Sponsors_scroll'
 import Organizers from '@/components/Homepage/Organizers/Organizers'
 import Whatwedo from '@/components/Homepage/Whatwedo/Whatwedo'
