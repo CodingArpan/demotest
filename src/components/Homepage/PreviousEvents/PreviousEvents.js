@@ -166,7 +166,7 @@ function PreviousEvents() {
 
                     {
                         eventData.map((event, index) => {
-                            return <div className={styles.card}>
+                            return <div key={index} className={styles.card}>
                                 <div className={styles.imgContainer}>
                                     <div className={styles.imgStyle}>
                                         <Image fill src={event.image} alt="" />
@@ -178,7 +178,7 @@ function PreviousEvents() {
                             </div>
                         })
                     }
-                   
+
 
                 </div>
             </div>
