@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 import styles from '@/components/EventsPage/EventPageHeader/EventPageHeader.module.css'
@@ -11,7 +12,9 @@ function EventPageHeader() {
         <header>
             <div className={styles.container}>
                 <div className={styles.eventbanner}>
-                    <img className={styles.imageStyle} src="/Devloop2.0.png" alt="" />
+                    <div className={styles.imageStyle}>
+                        <Image fill src="/Devloop2.0.png" alt="" />
+                    </div>
                 </div>
                 <div className={styles.tagline}>Lorem ipsum dolor sit amet consectetur
                     qui provident ea assumenda doloremque?

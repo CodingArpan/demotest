@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '@/components/Homepage/HireDevlopers/HireDevloper.module.css'
 function HireDevlopers() {
     return (
@@ -15,7 +16,9 @@ function HireDevlopers() {
             </div>
 
             <div className={styles.right}>
-                <img className={styles.imageStyle} src="/devloper.jpg" alt="" />
+                <div className={styles.imageStyle}>
+                    <Image fill src="/devloper.jpg" alt="" />
+                </div>
             </div>
 
         </div>

@@ -26,16 +26,24 @@
 
 }
 
+.logo {
+    position: relative;
+    width: 100%;
+    max-width: 150px;
+}
+
 .imageStyle {
+    position: relative;
     width: 150px;
+    height: calc(150px/2);
 }
 
 .left {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
 }
 
 .right {

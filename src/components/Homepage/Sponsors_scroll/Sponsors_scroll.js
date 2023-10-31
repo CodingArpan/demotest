@@ -1,6 +1,20 @@
 import React from 'react'
 import styles from '@/components/Homepage/Sponsors_scroll/Sponsors_scroll.module.css'
+import Image from 'next/image'
+
+
 function Sponsors_scroll() {
+
+  const sponsors = ["/hackplus.png",
+    "/hackplus.png",
+    "/hackplus.png",
+    "/hackplus.png",
+    "/hackplus.png",
+    "/hackplus.png",
+    "/hackplus.png",
+    "/hackplus.png",
+    "/hackplus.png",
+  ]
   return (
     <div className={`section sponsors`}>
       <p className={`title`}>Our Sponsors</p>
@@ -9,70 +23,49 @@ function Sponsors_scroll() {
         <marquee className={styles.marquee} scrollamount="5" behavior="scroll" direction="right" width="500">
           <div className={styles.superBoxContainer}>
             <div className={styles.boxContainer}>
-              <div className={styles.box}>
-                1
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
-              <div className={styles.box}>
-                2
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
-              <div className={styles.box}>
-                3
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
-              <div className={styles.box}>
-                4
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
+              {
+                sponsors.map((sponsor, index) => {
+                  return <div key={index} className={styles.box}>
+                    {index}
+                    <div className={styles.sponsorImg}>
+                      <div className={styles.imgStyle}>
+                        <Image fill src={sponsor} alt="" />
+                      </div>
+                    </div>
+                    <span className={styles.surfaceLine}></span>
+                  </div>
+                })
+              }
             </div>
             <div className={styles.boxContainer}>
-              <div className={styles.box}>
-                1
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
-              <div className={styles.box}>
-                2
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
-              <div className={styles.box}>
-                3
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
-              <div className={styles.box}>
-                4
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
+              {
+                sponsors.map((sponsor, index) => {
+                  return <div key={index} className={styles.box}>
+                    {index}
+                    <div className={styles.sponsorImg}>
+                      <div className={styles.imgStyle}>
+                        <Image fill src={sponsor} alt="" />
+                      </div>
+                    </div>
+                    <span className={styles.surfaceLine}></span>
+                  </div>
+                })
+              }
             </div>
             <div className={styles.boxContainer}>
-              <div className={styles.box}>
-                1
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
-              <div className={styles.box}>
-                2
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
-              <div className={styles.box}>
-                3
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
-              <div className={styles.box}>
-                4
-                <img className={styles.sponsorImg} src="/vercel.svg" alt="" />
-                <span className={styles.surfaceLine}></span>
-              </div>
+              {
+                sponsors.map((sponsor, index) => {
+                  return <div key={index} className={styles.box}>
+                    {index}
+                    <div className={styles.sponsorImg}>
+                      <div className={styles.imgStyle}>
+                        <Image fill src={sponsor} alt="" />
+                      </div>
+                    </div>
+                    <span className={styles.surfaceLine}></span>
+                  </div>
+                })
+              }
             </div>
 
           </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '@/components/Common/Footer/Footer.module.css'
 function Footer() {
     return (
@@ -7,7 +8,9 @@ function Footer() {
             <div className={styles.linkContainer}>
                 <div className={styles.left}>
                     <div className={styles.logo}>
-                        <img className={styles.imageStyle} src="http://mehdev.club/wp-content/uploads/2022/10/MDC_Dark.png" alt="" />
+                        <div className={styles.imageStyle}>
+                            <Image fill src="/MDC_Dark.png" alt="" />
+                        </div>
                     </div>
                     <div className={styles.tagline}>A community for tech enthusiast and a home for open-source contribution.</div>
                 </div>

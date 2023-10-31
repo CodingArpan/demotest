@@ -1,13 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '@/components/Common/Navbar/Navbar.module.css'
 function Navbar() {
     return (
         <nav className={styles.container}>
             <div className={styles.navWrapper}>
-                <div className={styles.logo}>
-                    <Link href="/">  <img className={styles.imgStyle} src="/MDC.png" alt="" /></Link>
-                </div>
+                <Link href="/"> <div className={styles.imgStyle}>
+                    <Image fill src="/MDC.png" alt="Mehsana Developers Club" />
+                </div></Link>
                 <div className={styles.menus}>
                     <input className={styles.checkBox} type="checkbox" name="menu" id="menu" />
 

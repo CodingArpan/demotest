@@ -1,7 +1,102 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 import styles from '@/components/Homepage/PreviousEvents/PreviousEvents.module.css'
 function PreviousEvents() {
+
+    const eventData = [
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+        {
+            image: '/community.jpg',
+            title: 'Community Dinner',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vero optio sint consequatur iure',
+        },
+    ]
+
     const leftScroll = () => {
         const target = document.querySelector('#galleryContainer');
         // console.log(target.scrollWidth);
@@ -68,123 +163,23 @@ function PreviousEvents() {
                 </div>
 
                 <div id="gallery" className={styles.gallery}>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.imgStyle} src="/community.jpg" alt="" />
-                        <p className={styles.cardTitle}>Community Dinner</p>
-                        <p className={styles.description}>Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Expedita vero optio sint
-                            consequatur iure
-                        </p>
-                        <span className={styles.btn}>Know more</span>
-                    </div>
+
+                    {
+                        eventData.map((event, index) => {
+                            return <div className={styles.card}>
+                                <div className={styles.imgContainer}>
+                                    <div className={styles.imgStyle}>
+                                        <Image fill src={event.image} alt="" />
+                                    </div>
+                                </div>
+                                <p className={styles.cardTitle}>{event.title}</p>
+                                <p className={styles.description}>{event.description}</p>
+                                <span className={styles.btn}>Know more</span>
+                            </div>
+                        })
+                    }
+                   
+
                 </div>
             </div>
 

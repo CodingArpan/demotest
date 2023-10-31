@@ -9,9 +9,6 @@ function Testimonials() {
             <div className={styles.circleConatiner}>
                 <div className={styles.bigCircle}></div>
             </div>
-
-
-
             <div className={styles.feedbackContainer}>
                 <div className={styles.feedbackCard}>
                     <div className={styles.profilePic}>

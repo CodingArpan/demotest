@@ -154,10 +154,19 @@ p.details {
 
 }
 
+.imgContainer {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: 350px;
+
+}
+
 .imgStyle {
     position: absolute;
     z-index: -1;
     width: 250px;
+    height: 350px;
     background-position: center;
     border-radius: 20px;
     filter: brightness(0.6);
@@ -178,7 +187,7 @@ p.details {
 .btn {
     background-color: white;
     border-radius: 20px;
-    padding:10px;
+    padding: 10px;
     font-size: 0.8rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

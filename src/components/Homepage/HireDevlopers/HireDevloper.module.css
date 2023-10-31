@@ -60,11 +60,13 @@
 
 .right {
     position: relative;
+    width: 100%;
+    max-width: 400px;
 }
 
 .imageStyle {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    height: 400px;
 }
 
 @media screen and (max-width:800px) {
