@@ -1,0 +1,165 @@
+.paraContainer,
+.badgeForm {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem
+}
+
+.badgeTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primaryBlack);
+    text-transform: capitalize;
+    line-height: 2.2rem;
+    padding: 1rem 0;
+
+}
+
+.desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primaryGrayDark);
+    text-transform: capitalize;
+    line-height: 1.4rem;
+}
+
+.hideIt {
+    display: none;
+}
+
+.secTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primaryGrayDark);
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    padding: 1rem 0;
+}
+
+
+
+.uploadImageBtn {
+    width: fit-content;
+    display: block;
+    background: var(--primaryRed);
+    padding: 0.8rem 1.6rem;
+    border-radius: 50px;
+    color: var(--primaryWhite);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.shapeOptionContainer {
+    position: relative;
+
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryBlue);
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--primaryWhite);
+    border-radius: 50px;
+}
+
+.originalOptionBtn,
+.squareOptionBtn,
+.circleOptionBtn {
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+
+}
+
+.originalOptionBtn {
+    border-radius: 50px 0 0 50px;
+}
+
+.squareOptionBtn {
+    border-radius: 0px;
+}
+
+.circleOptionBtn {
+    border-radius: 0 50px 50px 0;
+}
+
+.originalOptionBtn:hover,
+.squareOptionBtn:hover,
+.circleOptionBtn:hover {
+    background: var(--primaryBlack);
+}
+
+.squareOptionBtn {
+    border-left: 0.5px solid var(--primaryWhite);
+    border-right: 0.5px solid var(--primaryWhite);
+    border-radius: 0px;
+
+}
+
+.selectShape {
+    position: relative;
+    display: none;
+}
+
+.selectShape:checked+label {
+    background-color: var(--primaryBlack);
+}
+
+.badgeOptionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.badgeImageContainer {
+    position: relative;
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+}
+
+.badgeOption {
+
+    border-radius: 10px;
+    width: max-content;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.badgeOption:hover {
+    cursor: pointer;
+    scale: 1.02;
+    box-shadow: 0 4px 20px 0 rgba(125, 168, 249, 0.2);
+
+}
+
+.imageContainer {
+    position: relative;
+
+
+}
+
+.badgeContainer {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.imageStyle {
+    width: 100px;
+}
+
+.selectBadge {
+    display: none;
+
+}
+
+.selectBadge:checked+label {
+    border: 1px solid var(--primaryBlack);
+
+}
