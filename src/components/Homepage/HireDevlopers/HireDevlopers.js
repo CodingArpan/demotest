@@ -17,7 +17,7 @@ function HireDevlopers() {
 
             <div className={styles.right}>
                 <div className={styles.imageStyle}>
-                    <Image fill src="/devloper.jpg" alt="" />
+                    <Image fill src="/devloper.jpg" alt="devloper illustration" />
                 </div>
             </div>
 
