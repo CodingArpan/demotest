@@ -55,14 +55,14 @@
     text-transform: capitalize;
     color: var(--primaryBlack);
     cursor: pointer;
-    transition: all 0.2s ease-in;
+    transition: all 0.1s ease-in;
     text-decoration: none;
 
 }
 
 .menuitem:hover {
     color: var(--primaryRed);
-    font-weight: 600;
+    /* font-weight: 600; */
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-color: var(--primaryRed);

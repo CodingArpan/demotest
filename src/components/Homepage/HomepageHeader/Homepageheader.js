@@ -10,10 +10,12 @@ function Homepageheader() {
                     <div className={styles.devlopers}>developers.</div>
                     <div className={styles.club}>club.</div>
                 </div>
+                
                 <div className={styles.tagline}>
-                    Just An Awesome Community
+                    Just An Awesome Community <br />
                     We collaborate to create impact!
                 </div>
+
                 <div className={styles.btnContainer}>
                     <button className={styles.colorBorder}>
                         <div className={styles.btnRegister}> Subscribe for upcoming events</div>
@@ -23,7 +25,7 @@ function Homepageheader() {
 
                 <div className={styles.mdcContainer}>
                     <div className={styles.imgStyle}>
-                        <Image fill  src="/MDC.png" alt="MDC" />
+                        <Image fill src="/MDC.png" alt="MDC" />
                     </div>
                 </div>
 

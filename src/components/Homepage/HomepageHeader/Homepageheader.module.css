@@ -23,22 +23,34 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     gap: 30px;
     flex-wrap: wrap;
+
+
+    background: #FF696E;
+    background: -webkit-linear-gradient(to right, #FF696E 0%, #4286f5 50%, #FBCA35 100%);
+    background: -moz-linear-gradient(to right, #FF696E 0%, #4286f5 50%, #FBCA35 100%);
+    background: linear-gradient(to right, #FF696E 0%, #4286f5 50%, #FBCA35 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 
 }
 
 .tagline {
+    width: fit-content;
     margin: auto;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 500;
     padding: 4rem 0;
-    color: var(--primaryGray);
+    color: var(--primaryGrayLight);
     text-align: center;
     width: 100%;
     max-width: 600px;
+
+
 }
 
 .btnContainer {
@@ -129,8 +141,12 @@
 
 
 @media screen and (max-width:800px) {
+    .eventbanner {
+        font-size: 3rem;
+    }
+
     .mdcContainer {
-    margin-top: 2rem;
+        margin-top: 2rem;
     }
 
     .tagline {

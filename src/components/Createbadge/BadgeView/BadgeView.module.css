@@ -1,0 +1,147 @@
+.badgeViewContainer {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* padding: 1rem; */
+    /* background-color: var(--primaryBlueExtraLight); */
+    border-radius: 0.5rem;
+}
+
+.cropViewTitle {
+    position: relative;
+
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    color: black;
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    padding: 1rem 0;
+
+}
+
+.cropViewContainer {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.uploadedImageContainer {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+/* 
+.uploadedImageContainer:hover {
+    cursor: move;
+    -ms-overflow-style: scrollbar;
+ 
+    scrollbar-width: 5px;
+    
+}
+
+.uploadedImageContainer:hover::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+
+}
+
+.uploadedImageContainer:hover::-webkit-scrollbar-track {
+    background: #5b99f7;
+}
+
+
+.uploadedImageContainer:hover::-webkit-scrollbar-thumb {
+    background: #efecec;
+    padding: 2px;
+    border-radius: 10px;
+} */
+
+.uploadImageViewStyle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.uploadBadgeViewStyle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.realBadgeContainer {
+    position: absolute;
+    bottom: -5px;
+}
+
+.cropViewContainer,
+.uploadedImageContainer {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.cropViewContainer::-webkit-scrollbar,
+.uploadedImageContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.badgeDownloadBtn {
+    width: 100%;
+    background-color: var(--primaryRed);
+    color: var(--primaryWhite);
+    padding: 0.8rem 1.6rem;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.demoView {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+    background-color: var(--primaryBlueExtraLight);
+    border-radius: 10px;
+
+}
+
+.yourImage {
+    padding: 2rem;
+    background-color: var(--primaryBlueLight);
+    border-radius: 10px;
+    color: var(--primaryWhite);
+}
+
+.yourBadge {
+    padding: 2rem;
+    background-color: var(--primaryBlueLight);
+    border-radius: 10px;
+    color: var(--primaryWhite);
+
+}
