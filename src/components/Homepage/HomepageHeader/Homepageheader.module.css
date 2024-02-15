@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #1c1c1c;
+    background: #000000;
     /* background: linear-gradient(120deg, rgb(44, 44, 44) 0%, rgb(42, 41, 67) 33%, rgba(1, 0, 0, 1) 100%); */
     overflow: hidden;
 }
@@ -41,7 +41,7 @@
 .tagline {
     width: fit-content;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 500;
     padding: 4rem 0;

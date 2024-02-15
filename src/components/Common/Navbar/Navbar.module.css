@@ -3,8 +3,9 @@
     top: 0;
     z-index: 10;
     width: 100%;
-    background-color: var(--primaryWhite);
-    box-shadow: 0 4px 10px 0 rgba(172, 209, 255, 0.228);
+    /* background-color: var(--primaryBlack); */
+    background-color: rgb(26, 26, 27);
+    /* box-shadow: 0 4px 10px 0 rgba(172, 209, 255, 0.228); */
 }
 
 .navWrapper {
@@ -53,7 +54,7 @@
     font-size: 0.9rem;
     font-weight: 500;
     text-transform: capitalize;
-    color: var(--primaryBlack);
+    color: var(--primaryGrayLight);
     cursor: pointer;
     transition: all 0.1s ease-in;
     text-decoration: none;

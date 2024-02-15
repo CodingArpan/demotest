@@ -46,7 +46,8 @@ function Contact() {
 
     const userInput = (e) => {
         e.preventDefault();
-        if (checkUserInputData(e)) setFormData((FormData) => { return { ...FormData, [e.target.name]: e.target.value } })
+        if (checkUserInputData(e)) setFormData((FormData) => {
+             return { ...FormData, [e.target.name]: e.target.value } })
         console.log(FormData);
     }
 
