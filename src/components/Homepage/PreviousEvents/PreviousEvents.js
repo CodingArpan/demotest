@@ -134,7 +134,7 @@ function PreviousEvents() {
             <div className={styles.eventInfo}>
                 <div className={styles.infoCard}>
                     <p className={styles.infTitle}>Location</p>
-                    <p className={styles.details}>Ganpat University, MBA Auditorium</p>
+                    <p className={styles.details}>Vidyasagar University, MBA Auditorium</p>
                 </div>
                 <div className={styles.infoCard}>
                     <p className={styles.infTitle}>Date & Time</p>

@@ -6,7 +6,7 @@ function Homepageheader() {
         <header>
             <div className={styles.container}>
                 <div className={styles.eventbanner}>
-                    <div className={styles.mehsana}>mehsana.</div>
+                    <div className={styles.mehsana}>midnapur.</div>
                     <div className={styles.devlopers}>developers.</div>
                     <div className={styles.club}>club.</div>
                 </div>

@@ -102,7 +102,7 @@ function Contact() {
                     <span className={styles.text}>Email</span>
                 </div>
 
-                <div className={styles.emailAddress}>mehdevs@gmail.com</div>
+                <div className={styles.emailAddress}>contact.codingarpan@gmail.com</div>
 
                 <div onClick={(e) => { copyEmail(e) }} className={styles.copyBtn}>Copy</div>
             </div>
